@@ -10,10 +10,21 @@ export default function Header() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item"><a className="nav-link text-light" aria-current="page" href="#">Home</a></li>
-                            <li className="nav-item"><a className="nav-link text-light" href="#">Customer Care</a></li>
-                            <li className="nav-item"><a className="nav-link text-light" href="#">Login</a></li>
-                            <li className="nav-item"><a className="nav-link text-light" href="#">Signup</a></li>
+                            <li className="nav-item"><a className="nav-link text-light" aria-current="page" href="/homepage">Home</a></li>
+                            <li className="nav-item"><a className="nav-link text-light" href="#">About</a></li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Service
+                                </a>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href='/smartphone/all'>Smartphone</a></li>
+                                    <li><a className="dropdown-item" href='/laptop/all'>Laptop</a></li>
+                                    <li><a className="dropdown-item" href="#">Tablet</a></li>
+                                    <li><a className="dropdown-item" href="#">Accessories</a></li>
+                                    {/* <li><hr className="dropdown-divider" /></li> */}
+                                    {/* <li><a className="dropdown-item" href="#">Something else here</a></li> */}
+                                </ul>
+                            </li>
                         </ul>
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

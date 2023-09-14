@@ -18,7 +18,7 @@ export default function AllProduct() {
                                 <div className="card m-2" style={{ width: "18rem" }}>
                                     <img src={item.displayImage} alt="product-image" className="card-img-top" height={150} width={220} />
                                     <div className="card-body">
-                                        <p className="card-title">{item.category}</p>
+                                        <p className="card-title text-center fw-bold">{item.category}</p>
                                         <Link className="btn btn-success" to={item.viewmorePath}>View More</Link>
 
                                     </div>

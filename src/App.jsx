@@ -1,6 +1,7 @@
 import Homepage from "./Pages/Homepage";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ProductDetail from "./Pages/Productdetail";
+import Smartphone from "./Pages/Smartphone";
+import LaptopPage from "./Pages/LaptopPage";
 
 export default function App() {
   return (
@@ -8,13 +9,10 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Homepage />}></Route>
-          <Route path='/product/detail' element={<Homepage />}></Route>
-          <Route path='/product/listing' element={<ProductDetail />}></Route>
-          <Route path='/addtocart/account' element={<Homepage />}></Route>
-          <Route path='/checkout' element={<Homepage />}></Route>
-          <Route path='/smartphone/all' element={<p>view smartphone</p>}></Route>
-          <Route path='/laptop/all' element={<p>view laptop</p>}></Route>
-          <Route path='/tablet/all' element={<p>view tablet</p>}></Route>
+          <Route path='/homepage' element={<Homepage />}></Route>
+          <Route path='/smartphone/all' element={<Smartphone />}></Route>
+          <Route path='/laptop/all' element={<LaptopPage />}></Route>
+          <Route path='#' element={<p>view tablet</p>}></Route>
         </Routes>
       </BrowserRouter>
 

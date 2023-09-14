@@ -1,7 +1,8 @@
 import AllProduct from "../Components/allProduct";
 import Header from "../Components/header";
+import LatestLaptop from "../Components/laptop";
 import LatestSmartphone from "../Components/smartphone";
-import { smartphoneDB } from "../Database/LatestProductDB";
+import { LaptopBD, smartphoneDB } from "../Database/LatestProductDB";
 
 export default function Homepage() {
     // console.log(LatestSmartphone)
@@ -14,30 +15,11 @@ export default function Homepage() {
                 </div>
                 <div className="row">
                     <p className="h4 text-center">WELCOME TO TECHMART.PK!</p>
+                    <i className="fw-bold text-center">We deals in smartphone, laptop, tablet and mobile accessories.</i>
                 </div>
 
-                <div className="row">
+                <div className="row mt-5">
                     <AllProduct />
-                </div>
-
-                <div className="row">
-                    <div className="col-md-12">
-                        <p className="mx-2 fw-bold h5">Smartphone</p>
-                    </div>
-
-                    {smartphoneDB.map((item) => <LatestSmartphone key={item.id} brandname={item.brandName} price={item.price} camera={item.camera}
-                        storage={item.storage} ram={item.ram} processor={item.processor} showImage={item.Image}
-                    />)}
-
-
-                    <div className="col-md-12">
-                        <p className="mx-2 fw-bold h5">Laptop</p>
-                    </div>
-
-                    <div className="col-md-12">
-                        <p className="mx-2 fw-bold h5">Tablet</p>
-                    </div>
-
                 </div>
             </div>
         </>

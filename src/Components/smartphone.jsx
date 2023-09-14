@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-
-// import { Link } from "react-router-dom"
 export default function LatestSmartphone({ brandname, price, camera, storage, ram, processor, showImage }) {
 
     return (
@@ -16,10 +13,6 @@ export default function LatestSmartphone({ brandname, price, camera, storage, ra
                         <p className="card-text mx-3 mb-0 mt-0">RAM: {ram}</p>
                         <p className="card-text mx-3 mb-0 mt-0">Processor: {processor}</p>
                     </div>
-                    <div>
-                        <Link to='/product/listing' className="btn btn-success mx-5 ml-4 mb-1">View More Item</Link>
-                    </div>
-
                 </div>
             </div>
 
