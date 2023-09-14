@@ -1,12 +1,7 @@
 import AllProduct from "../Components/allProduct";
 import Header from "../Components/header";
-import LatestLaptop from "../Components/laptop";
-import LatestSmartphone from "../Components/smartphone";
-import { LaptopBD, smartphoneDB } from "../Database/LatestProductDB";
 
 export default function Homepage() {
-    // console.log(LatestSmartphone)
-    // This is a product listing page
     return (
         <>
             <div className="container-fluid">
